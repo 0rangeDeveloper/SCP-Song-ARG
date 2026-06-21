@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SCPF Internal Access</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginPage">
+
+<h1>SCPF SECURE NETWORK</h1>
+
+<p class="warning">
+LEVEL 4 AUTHORIZATION REQUIRED
+</p>
+
+<input id="username" placeholder="Username">
+
+<input
+id="password"
+type="password"
+placeholder="Password">
+
+<button onclick="login()">
+LOGIN
+</button>
+
+<p id="message"></p>
+
+</div>
+
+<div id="terminalPage" style="display:none;">
+
+<div id="terminalOutput">
+
+Welcome, MTF Command.
+
+Type <span class="green">help</span>
+
+</div>
+
+<div class="inputLine">
+
+>
+
+<input id="terminalInput">
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
